@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { FlickrSearchComponent } from './flickr-search/flickr.search.component';
+import { FlickrSearchBoxComponent } from './flickr-search-box/flickr.search.box.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
 
@@ -19,7 +21,9 @@ import { routing } from './app.routing';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    FlickrSearchComponent,
+    FlickrSearchBoxComponent
   ],
   providers: [
     ApiService
