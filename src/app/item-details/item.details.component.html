@@ -1,0 +1,19 @@
+<a class="thumbnail">
+  <img src="{{item.media.m}}" alt="..." class="img-responsive" style="min-height:200px;height:200px;" class="img-thumbnail">
+</a>
+<template #content let-c="close" let-d="dismiss" style="width: 650px">
+  <div class="modal-header">
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h4 class="modal-title">{{item.title}}</h4>
+  </div>
+  <div class="modal-body">
+	  <img src="{{highResolutionLink()}}" alt="..." class="mg-responsive center-block">  	
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+  </div>
+</template>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>

@@ -1,1 +1,7 @@
-<input type="text" class="form-control" placeholder="Search" autofocus>
+<input type="text" class="form-control" placeholder="Search" autofocus>InProgress: {{inprogress}}
+          <img
+            style="float: right;"
+            *ngIf="inprogress"
+            src='{{loadingImage}}' />
+<!--button class="btn btn-default" type="submit">Button</button>
+<button type="button" class="btn btn-success">Success</button -->
